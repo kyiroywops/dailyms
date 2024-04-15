@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "425174048164",
+    "project_id": "growbusiness-de809",
+    "storage_bucket": "growbusiness-de809.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425174048164:android:82a9da5e9494071e4f7531",
+        "android_client_info": {
+          "package_name": "com.example.growbusiness"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOVxcMeoJ7wymmMHKGYT3YZi8wEDzHzB0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
