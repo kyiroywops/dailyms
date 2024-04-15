@@ -10,8 +10,9 @@ class _BaseScreenState extends State<BaseScreen> {
   static List<Widget> _widgetOptions = <Widget>[
      Text('Calendario', textAlign: TextAlign.center), // Calendario // Historial
      Text('Calendario', textAlign: TextAlign.center), // Calendario
-      Text('Calendario', textAlign: TextAlign.center), // Calendario
     Text('Calendario', textAlign: TextAlign.center), // Calendario
+    Text('Calendario', textAlign: TextAlign.center), // Calendario
+        Text('Calendario', textAlign: TextAlign.center), // Calendario
   ];
 
  
@@ -27,8 +28,9 @@ class _BaseScreenState extends State<BaseScreen> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            _buildNavItem(Icons.book, 'Historial', 0),
-            _buildNavItem(Icons.calendar_today, 'Calendar', 1),
+            _buildNavItem(Icons.inventory_rounded, 'Daily', 0),
+            _buildNavItem(Icons.inventory, 'Products', 1),
+            _buildNavItem(Icons.swap_vert_circle_sharp, 'Sales', 2),
             _buildNavItem(Icons.bar_chart, 'Stats', 3),
             _buildNavItem(Icons.person, 'Profile', 4),
           ],
