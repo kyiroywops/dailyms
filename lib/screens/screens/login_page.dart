@@ -52,18 +52,20 @@ class _LoginScreenState extends State<LoginScreen> {
               },
             ),
           ),
-          Positioned(
-            top: titleTopPosition -
-                110, // Ajusta la posición vertical según sea necesario
-            left: 0,
-            right: 0,
-            child: Center(
+       Positioned(
+          top: titleTopPosition - 110, // Ajusta la posición vertical según sea necesario
+          left: 0,
+          right: 0,
+          child: Center(
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20), // Usa un valor que se ajuste a tu diseño
               child: Image.asset(
                 'assets/images/logo.png', // Ruta del logo
                 height: 100, // Ajusta el tamaño según tus necesidades
               ),
             ),
           ),
+        ),
           Positioned(
             top: titleTopPosition,
             left: 55,
