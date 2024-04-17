@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:growbusiness/screens/screens/home_page.dart';
+import 'package:growbusiness/screens/screens/profile_page.dart';
 
 class BaseScreen extends StatefulWidget {
   @override
@@ -8,11 +10,11 @@ class BaseScreen extends StatefulWidget {
 class _BaseScreenState extends State<BaseScreen> {
   int _selectedIndex = 0;
   static List<Widget> _widgetOptions = <Widget>[
-     Text('Calendario', textAlign: TextAlign.center), // Calendario // Historial
+    HomeScreen(),
      Text('Calendario', textAlign: TextAlign.center), // Calendario
     Text('Calendario', textAlign: TextAlign.center), // Calendario
     Text('Calendario', textAlign: TextAlign.center), // Calendario
-        Text('Calendario', textAlign: TextAlign.center), // Calendario
+    ProfileScreen()
   ];
 
  
@@ -31,7 +33,7 @@ class _BaseScreenState extends State<BaseScreen> {
             _buildNavItem(Icons.inventory_rounded, 'Daily', 0),
             _buildNavItem(Icons.inventory, 'Products', 1),
             _buildNavItem(Icons.swap_vert_circle_sharp, 'Sales', 2),
-            _buildNavItem(Icons.bar_chart, 'Stats', 3),
+            _buildNavItem(Icons.calendar_view_month_rounded, 'Events', 3),
             _buildNavItem(Icons.person, 'Profile', 4),
           ],
         ),
